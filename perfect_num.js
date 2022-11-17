@@ -1,16 +1,17 @@
-
 function perfect(num){
     sum=0
-    for(var i=0;i<num;i++){
+    i=1
+    while(i<num){
         if (num%i==0){
             sum=sum+i
         }
+        i=i+1
     }
     if (num==sum){
-        console.log(num,"is a perfect num")
+        console.log(num,"perfect num")
     }
     else{
-        print(num,"is not a perfect num")
+        console.log(num,"is not a perfect num")
     }
 }
 perfect(6)
